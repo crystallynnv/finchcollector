@@ -1,6 +1,8 @@
 from django.shortcuts import render
 from .models import Finch
 
+# Add the Cat class & list and view function below the imports
+
 
 # Create your views here.
 from django.http import HttpResponse
