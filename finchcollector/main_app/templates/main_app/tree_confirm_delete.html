@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h1>Delete Tree</h1>
+
+  <h4>Are you sure <span class="teal-text">{{ object.name }} is moving out of {{ tree.name }}?</h4>
+
+  <form action="" method="POST">
+    {% csrf_token %}
+    <input type="submit" value="Yes!" class="btn">
+    <a href="{% url 'trees_detail' object.id %}">Cancel</a>
+  </form>
+{% endblock %}
